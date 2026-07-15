@@ -28,6 +28,6 @@ export const aboutMe: AboutMe = {
     "/headshot.jpeg",
   githubUsername: "carsonrivera04",
   linkedinUsername: "carsonrivera04",
-  cvUrl: "https://",
+  cvUrl: "/Carson_Rivera_Resume.pdf",
   institutionUrl: "https://www.fsu.edu/",
 };
