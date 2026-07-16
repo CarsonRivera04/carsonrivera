@@ -1,5 +1,3 @@
-const DEFAULT_BASE_PATH = "/carsonrivera";
-
 export function withBasePath(path?: string): string {
   if (!path) return "";
 
@@ -11,15 +9,12 @@ export function withBasePath(path?: string): string {
     return path;
   }
 
-  const basePath =
-    process.env.NEXT_PUBLIC_BASE_PATH ||
-    (process.env.NODE_ENV === "production" ? DEFAULT_BASE_PATH : "");
+  // Only use NEXT_PUBLIC_BASE_PATH when explicitly set. This lets custom
+  // domains (root) work without forcing a repo subpath in production.
+  let basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+  if (basePath.endsWith("/")) basePath = basePath.slice(0, -1);
 
   const normalizedPath = path.startsWith("/") ? path : `/${path}`;
 
-  if (!basePath) {
-    return normalizedPath;
-  }
-
-  return `${basePath}${normalizedPath}`;
+  return basePath ? `${basePath}${normalizedPath}` : normalizedPath;
 }
