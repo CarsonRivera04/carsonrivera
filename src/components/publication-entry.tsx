@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import { Publication } from "@/data/publication";
+import { withBasePath } from "@/lib/asset-path";
 
 export function PublicationEntry({
   publication,
@@ -12,7 +13,7 @@ export function PublicationEntry({
       {publication.imageUrl && (
         <div className="w-full sm:w-1/4 min-w-[160px] relative">
           <Image
-            src={publication.imageUrl}
+            src={withBasePath(publication.imageUrl)}
             alt={publication.title}
             width={160}
             height={200}

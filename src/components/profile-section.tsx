@@ -8,6 +8,7 @@ import {
   GraduationCap,
 } from "lucide-react";
 import { AboutMe } from "@/data/aboutme";
+import { withBasePath } from "@/lib/asset-path";
 
 interface ProfileSectionProps {
   aboutMe: AboutMe;
@@ -24,7 +25,7 @@ export function ProfileSection({ aboutMe }: ProfileSectionProps) {
         <div className="w-1/3 md:w-full flex-shrink-0">
           <div className="relative max-h-[45vh] md:w-[65%] aspect-[3/4]">
             <Image
-              src={aboutMe.imageUrl}
+              src={withBasePath(aboutMe.imageUrl)}
               alt={aboutMe.name}
               fill
               priority
@@ -75,7 +76,7 @@ export function ProfileSection({ aboutMe }: ProfileSectionProps) {
           )}
           {aboutMe.cvUrl && (
             <a
-              href={aboutMe.cvUrl}
+              href={withBasePath(aboutMe.cvUrl)}
               className="group inline-flex items-center gap-2 text-xs text-zinc-500 hover:text-zinc-900 transition-colors duration-300"
               target="_blank"
               rel="noopener noreferrer"
