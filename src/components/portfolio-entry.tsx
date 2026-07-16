@@ -23,6 +23,7 @@ export function PortfolioEntry({ portfolio }: { portfolio: Portfolio }) {
             <a
               href={portfolio.projectUrl}
               className="group inline-flex items-center gap-2 hover:text-zinc-600 transition-colors duration-300"
+              target="_blank"
             >
               {portfolio.title}
               <ArrowUpRight
@@ -53,6 +54,7 @@ export function PortfolioEntry({ portfolio }: { portfolio: Portfolio }) {
             <a
               href={portfolio.projectUrl}
               className="group inline-flex items-center gap-2 text-xs text-zinc-500 hover:text-zinc-900 transition-colors duration-300"
+              target="_blank"
             >
               <ArrowUpRight
                 size={12}
@@ -65,6 +67,7 @@ export function PortfolioEntry({ portfolio }: { portfolio: Portfolio }) {
             <a
               href={portfolio.codeUrl}
               className="group inline-flex items-center gap-2 text-xs text-zinc-500 hover:text-zinc-900 transition-colors duration-300"
+              target="_blank"
             >
               <ArrowUpRight
                 size={12}
