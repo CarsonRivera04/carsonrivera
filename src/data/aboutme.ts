@@ -22,7 +22,7 @@ export const aboutMe: AboutMe = {
   title: "Senior Computer Science Student",
   institution: "Florida State University",
   description:
-    "FSU Computer Science senior with experience as a Software Engineer Intern at Merck (supporting Research Labs IT) and an undergraduate researcher in AI/ML. Co-authored a multi-agent LLM system for behavioral health coaching, published at IEEE/ACM CHASE 2026 (21% acceptance rate).",
+    "FSU Computer Science senior with software engineering experience at Danfoss and Merck. AI and ML research experience at FSU, with a publication accepted at IEEE/ACM CHASE 2026.",
   email: "carsonrivera04@gmail.com",
   imageUrl:
     "/headshot.jpeg",

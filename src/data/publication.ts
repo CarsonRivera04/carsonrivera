@@ -17,6 +17,6 @@ export const publicationData: Publication[] = [
     conference: "IEEE/ACM CHASE",
     title: "Longitudinal Behavioral Change Coaching with Multi LLM Agents: Multi-Scale Summaries and Automated Dialogue Steering",
     authors: "Hansong Zhou, Zachary Skalski-Fouts, Linh Nguyen, Carson Rivera, Bonnie Spring, Hongyu Miao, Xiaonan Zhang",
-    //paperUrl: "https://arxiv.org/abs/2302.13095",
+    paperUrl: "https://doi.org/10.1016/j.smhl.2026.100694",
   },
 ];

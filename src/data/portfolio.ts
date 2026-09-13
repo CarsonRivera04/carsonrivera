@@ -17,15 +17,5 @@ export const portfolioData: Portfolio[] = [
     imageUrl:
       "/runningsafer.png",
     codeUrl: "https://github.com/CarsonRivera04/runningsafer",
-  },
-  {
-    title: "Thread Count",
-    description:
-      "Personal wardrobe management web application to encourage sustainable fashion practices.",
-    technologies: ["Blazor Server", ".NET", "C#", "SQLite"],
-    projectUrl: "https://threadcountcarson.com/",
-    imageUrl:
-      "/threadcount.png",
-    codeUrl: "https://github.com/CarsonRivera04/threadcount",
-  },
+  }
 ];
