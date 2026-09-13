@@ -10,27 +10,34 @@ export interface Experience {
 
 export const experienceData: Experience[] = [
   {
-    date: "June 2026 - Present",
+    date: "Sep. 2026 - Present",
+    title: "Software Engineer Intern",
+    company: "Danfoss",
+    description: "Angular and NestJS application controlling the Danfoss Turbocor compressor - the world's first oil-free magnetic bearing compressor for the HVAC industry",
+    companyUrl: "https://www.danfoss.com/en-us/products/dcs/compressors/turbocor/",
+  },
+  {
+    date: "Jun. 2026 - Aug. 2026",
     title: "Software Engineer Intern ",
     company: "Merck & Co.",
     description:
-      "Engineered a Python and FastAPI backend service for a RAG agent application, automating error routing to ensure uninterrupted delivery of critical SOP insights to R&D.",
+      "React and FastAPI RAG application for Merck Research Laboratories IT",
     companyUrl: "https://www.merck.com/",
   },
   {
-    date: "Sept. 2024 - Apr. 2026",
+    date: "Sep. 2024 - Apr. 2026",
     title: "Research Assistant",
     company: "Florida State University",
     description:
-      "Co-authored a published, peer-reviewed multi-agent LLM coaching system, designing a vLLM and structured JSON state-tracking framework that cut redundant conversational loops by 55%.",
-    companyUrl: "https://www.fsu.edu/",
+     "AI and ML research for Professor Xiaonan Zhang's Lab. Paper accepted for publication at IEEE/ACM CHASE 2026",
+    companyUrl: "https://www.cs.fsu.edu/~xzhang/",
   },
   {
-    date: "June 2025 - Aug. 2025",
+    date: "Jun. 2025 - Aug. 2025",
     title: "Software Engineer Intern",
     company: "Merck & Co.",
     description:
-      "Streamlined audit planning by developing a Power Platform solution with automated Graph API reminders and Test Studio cases to boost team coordination, deadline adherence, and long-term scalability.",
+      "Automating auditing for Merck Research Laboratories clinical trials",
     companyUrl: "https://www.merck.com/",
   },
 ];
